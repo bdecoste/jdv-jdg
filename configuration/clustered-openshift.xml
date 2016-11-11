@@ -144,7 +144,7 @@
                 <locking isolation="NONE" acquire-timeout="30000" concurrency-level="1000" striping="false"/>
                 <transaction mode="NONE"/>
             </local-cache>
-            <local-cache name="memcachedCache" start="EAGER">
+            <local-cache name="memcached" start="EAGER">
                 <locking isolation="NONE" acquire-timeout="30000" concurrency-level="1000" striping="false"/>
                 <transaction mode="NONE"/>
             </local-cache>
