@@ -197,10 +197,7 @@
                     </string-keyed-table>
                 </string-keyed-jdbc-store>
             </local-cache>
-            <!-- End of 'addressbook' cache definition -->
-
-        </cache-container>
-        <local-cache name="addressbook_indexed_mat" start="EAGER">
+            <local-cache name="addressbook_indexed_mat" start="EAGER">
 
                 <!-- Define the locking isolation of this cache -->
                 <locking
