@@ -127,8 +127,8 @@
             <deployment-scanner path="deployments" relative-to="jboss.server.base.dir" scan-interval="5000"/>
         </subsystem>
 <!-- ##INFINISPAN_ENDPOINT## -->
-        <subsystem xmlns="urn:infinispan:server:core:6.3" default-cache-container="clustered">
-        <cache-container name="clustered" default-cache="default" statistics="true">
+        <subsystem xmlns="urn:infinispan:server:core:6.3" default-cache-container="local">
+        <cache-container name="local" default-cache="default" statistics="true">
             <local-cache name="default" start="EAGER">
                 <locking isolation="NONE" acquire-timeout="30000" concurrency-level="1000" striping="false"/>
                 <transaction mode="NONE"/>
