@@ -110,17 +110,6 @@
         <subsystem xmlns="urn:jboss:domain:datasources:1.2">
             <datasources>
                 <!-- ##DATASOURCES## -->
-        <datasource jndi-name="java:jboss/datasources/SampleDS" pool-name="SampleDS" enabled="true" use-java-context="true">
-            <!-- The connection URL uses H2 Database Engine with in-memory database called test -->
-            <connection-url>jdbc:h2:mem:test;DB_CLOSE_DELAY=-1</connection-url>
-            <!-- JDBC driver name -->
-            <driver>h2</driver>
-            <!-- Credentials -->
-            <security>
-                <user-name>sa</user-name>
-                <password>sa</password>
-            </security>
-        </datasource>
                 <drivers>
                     <driver name="h2" module="com.h2database.h2">
                         <xa-datasource-class>org.h2.jdbcx.JdbcDataSource</xa-datasource-class>
