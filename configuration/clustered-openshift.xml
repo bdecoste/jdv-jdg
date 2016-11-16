@@ -129,6 +129,7 @@
 <!-- ##INFINISPAN_ENDPOINT## -->
         <subsystem xmlns="urn:infinispan:server:core:6.3" default-cache-container="clustered">
         <cache-container name="clustered" default-cache="default" statistics="true">
+            <transport executor="infinispan-transport" lock-timeout="60000"/>
             <local-cache name="default" start="EAGER">
                 <locking isolation="NONE" acquire-timeout="30000" concurrency-level="1000" striping="false"/>
                 <transaction mode="NONE"/>
